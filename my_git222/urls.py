@@ -22,4 +22,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", lambda req : render(req, 'yu_page.html')),
     path("coconut", include('coconut.urls')),
+    path("idea", lambda req : render(req, 'im_page.html'))
 ]

@@ -21,5 +21,5 @@ from django.shortcuts import render
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", lambda req : render(req, 'yu_page.html')),
-    path("sakkarin/", include('coconut.urls')),
+    path("coconut", include('coconut.urls')),
 ]

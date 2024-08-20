@@ -2,6 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.IndexPage, name="index"),
+    path("/c", views.IndexPage, name="index"),
 
 ]
